@@ -45,8 +45,7 @@ class ChestInformation : BaseFragment() {
         baseActivity.mCoin.visibility = View.GONE
 
         data = fill_with_data()
-
-        val timer = MyCounter(60000, 1000)
+        val timer = MyCounter(30000, 1000)
 
         horizontalAdapter = HorizontalAdapter(data!!, baseActivity)
         val horizontalLayoutManager = LinearLayoutManager(baseActivity, LinearLayoutManager.HORIZONTAL, false)
@@ -72,10 +71,7 @@ class ChestInformation : BaseFragment() {
                 .replace(R.id.mFrameLayout,ChestInjury())
                 .commit()
         }
-
-
     }
-
 
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {
         super.setUserVisibleHint(isVisibleToUser)
@@ -86,7 +82,6 @@ class ChestInformation : BaseFragment() {
 
 
     fun fill_with_data(): List<Data> {
-
         val data = ArrayList<Data>()
         data.add(Data(R.drawable.bench))
         data.add(Data(R.drawable.benchpresses))
@@ -123,8 +118,6 @@ class ChestInformation : BaseFragment() {
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
             holder.imageView.setImageResource(horizontalList.get(position).imageId)
-
-
         }
 
         override fun getItemCount(): Int {
@@ -143,8 +136,6 @@ class ChestInformation : BaseFragment() {
             mTimer.visibility = View.GONE
             mSetComplete.visibility = View.VISIBLE
             baseActivity.mCoin.visibility = View.VISIBLE
-
-
         }
 
         override fun onTick(millisUntilFinished: Long) {
