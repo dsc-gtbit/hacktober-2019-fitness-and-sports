@@ -3,17 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".informationFragment.ChestInformation">
+    android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mRecyclerview"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="@dimen/infoText"
         android:layout_marginTop="10dp"/>
-
-
+    
     <TextView
+        android:id="@+id/mChest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chestString"
@@ -33,15 +32,12 @@
         android:textStyle="bold"
         android:layout_marginBottom="100dp"
         android:visibility="gone"
-        android:fontFamily="@font/comfortaa_light"
-        />
-
+        android:fontFamily="@font/comfortaa_light"/>
 
     <TextView
         android:id="@+id/mTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="22"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textSize="40sp"
@@ -50,8 +46,6 @@
         android:visibility="gone"
         android:layout_marginBottom="26dp"
         android:fontFamily="@font/comfortaa_light"/>
-
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/videoFB"
@@ -85,7 +79,5 @@
         android:src="@drawable/ic_injury"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp" />
-
-
-
+    
 </RelativeLayout>
