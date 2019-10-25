@@ -13,11 +13,13 @@
         android:layout_marginTop="10dp"/>
 
     <ScrollView
+        android:id="@+id/mScrollview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mRecyclerview">
 
     <TextView
+        android:id="@+id/mChestInjury"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chestInjury"
@@ -28,9 +30,6 @@
         android:layout_marginRight="10dp"
         android:layout_marginStart="20dp" />
 
-
     </ScrollView>
-
-
-
+    
 </RelativeLayout>
