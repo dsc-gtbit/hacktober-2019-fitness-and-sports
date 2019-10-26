@@ -12,9 +12,6 @@ import com.example.fitnessandsports.R
 import com.example.fitnessandsports.fragmentSubCatagories.BaseFragment
 import kotlinx.android.synthetic.main.fragment_chest_video.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class ChestVideoFragment : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -34,8 +31,5 @@ class ChestVideoFragment : BaseFragment() {
         val uri = Uri.parse(path)
         videoView.setVideoURI(uri)
         videoView.start()
-
     }
-
-
 }
